@@ -12,7 +12,6 @@ namespace APIVerve.API.ASNLookup
     {
         /// <summary>
         /// The ASN you want to get information about
-        /// Example: AS15169
         /// </summary>
         [JsonProperty("asn")]
         public string Asn { get; set; }
