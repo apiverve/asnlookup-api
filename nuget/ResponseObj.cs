@@ -33,7 +33,6 @@ namespace APIVerve.API.ASNLookup
         public string Asn { get; set; }
 
         [JsonProperty("simple")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Simple { get; set; }
 
         [JsonProperty("handle")]
