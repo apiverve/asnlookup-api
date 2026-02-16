@@ -219,8 +219,9 @@ from apiverve_asnlookup.apiClient import AsnlookupAPIClient
 
 api = AsnlookupAPIClient("[YOUR_API_KEY]")
 
+query = { "asn": "AS15169" }
+
 try:
-    query = { "asn": "AS15169" }
     result = api.execute(query)
     print(result)
 finally:
