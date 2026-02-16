@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/asnlookup",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "ASN Lookup is a simple tool for getting information on Autonomous System Numbers (ASNs). It returns information on various ASNs.",
   "main": "index.js",
   "types": "index.d.ts",
