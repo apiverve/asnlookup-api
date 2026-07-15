@@ -4,19 +4,32 @@ declare module '@apiverve/asnlookup' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface asnlookupResponse {
     status: string;
     error: string | null;
     data: ASNLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface ASNLookupData {
-      asn:         string;
-      simple:      string;
-      handle:      string;
-      description: string;
+      asn:         null | string;
+      simple:      null | string;
+      handle:      null | string;
+      description: null | string;
+      country:     null | string;
   }
 
   export default class asnlookupWrapper {
