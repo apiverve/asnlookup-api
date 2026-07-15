@@ -125,7 +125,8 @@ async function makeRequest() {
     "asn": "AS15169",
     "simple": "15169",
     "handle": "GOOGLE",
-    "description": "Google LLC"
+    "description": "Google LLC",
+    "country": "US"
   }
 }
 ```
