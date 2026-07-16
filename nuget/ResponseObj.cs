@@ -25,6 +25,9 @@ namespace APIVerve.API.ASNLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,12 +36,27 @@ namespace APIVerve.API.ASNLookup
         public string Asn { get; set; }
 
         [JsonProperty("simple")]
-        public long Simple { get; set; }
+        public long? Simple { get; set; }
 
         [JsonProperty("handle")]
         public string Handle { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }
+
+        [JsonProperty("country")]
+        public string Country { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
