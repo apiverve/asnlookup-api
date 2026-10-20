@@ -1,13 +1,13 @@
-# [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-ASN Lookup is a simple tool for getting information on Autonomous System Numbers (ASNs). It returns information on various ASNs.
+ASN Lookup resolves any Autonomous System Number to its registered organization name and numeric identifier. Paid plans add the registry handle, country code, and announced IP range statistics.
 
 The ASN Lookup API provides a simple, reliable way to integrate asn lookup functionality into your applications. Built for developers who need production-ready asn lookup capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/asnlookup-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/asnlookup](https://docs.apiverve.com/ref/asnlookup)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -215,7 +215,10 @@ A real response from the ASN Lookup API:
     "simple": "15169",
     "handle": "GOOGLE",
     "description": "Google LLC",
-    "country": "US"
+    "country": "US",
+    "ipv4RangeCount": 152,
+    "ipv6RangeCount": 33,
+    "ipv4AddressCount": 1314816
   }
 }
 ```
@@ -224,7 +227,7 @@ A real response from the ASN Lookup API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

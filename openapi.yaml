@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: ASN Lookup
   description: >-
-    ASN Lookup is a simple tool for getting information on Autonomous System
-    Numbers (ASNs). It returns information on various ASNs.
+    ASN Lookup resolves any Autonomous System Number to its registered
+    organization name and numeric identifier. Paid plans add the registry
+    handle, country code, and announced IP range statistics.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/asnlookup:
     get:
-      summary: Get ASN Information
+      summary: ASN Lookup
       description: >-
         ASN Lookup is a simple tool for getting information on Autonomous System
         Numbers (ASNs). It returns information on various ASNs.
@@ -57,6 +58,9 @@ paths:
                   handle: GOOGLE
                   description: Google LLC
                   country: US
+                  ipv4RangeCount: 152
+                  ipv6RangeCount: 33
+                  ipv4AddressCount: 1314816
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
