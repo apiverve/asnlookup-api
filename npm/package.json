@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/asnlookup",
-  "version": "1.2.0",
-  "description": "ASN Lookup is a simple tool for getting information on Autonomous System Numbers (ASNs). It returns information on various ASNs.",
+  "version": "1.2.2",
+  "description": "ASN Lookup resolves any Autonomous System Number to its registered organization name and numeric identifier. Paid plans add the registry handle, country code, and announced IP range statistics.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "asn lookup", "asn information", "asn api", "asn tool", "asn software"
+    "asn lookup api", "autonomous system lookup", "find asn owner", "asn to organization", "autonomous system number search"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/asnlookup-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/asnlookup?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/asnlookup?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

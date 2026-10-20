@@ -25,11 +25,14 @@ declare module '@apiverve/asnlookup' {
 
 
   interface ASNLookupData {
-      asn:         null | string;
-      simple:      null | string;
-      handle:      null | string;
-      description: null | string;
-      country:     null | string;
+      asn:              null | string;
+      simple:           null | string;
+      handle:           null | string;
+      description:      null | string;
+      country:          null | string;
+      ipv4RangeCount:   number | null;
+      ipv6RangeCount:   number | null;
+      ipv4AddressCount: number | null;
   }
 
   export default class asnlookupWrapper {
