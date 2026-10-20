@@ -1,13 +1,12 @@
-ASNLookup API
+ASN Lookup API
 ============
 
-ASN Lookup is a simple tool for getting information on Autonomous System Numbers (ASNs). It returns information on various ASNs.
+ASN Lookup resolves any Autonomous System Number to its registered organization name and numeric identifier. Paid plans add the registry handle, country code, and announced IP range statistics.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [ASNLookup API](https://apiverve.com/marketplace/asnlookup?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.ASNLookup.svg)](https://www.nuget.org/packages/APIVerve.API.ASNLookup)
+
+This is a .NET wrapper for the [ASN Lookup API](https://apiverve.com/marketplace/asnlookup?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the asnlookup API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the ASN Lookup API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,8 +60,8 @@ class Program
         var apiClient = new ASNLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ASNLookupQueryOptions {
-    Asn = "AS15169"
-};
+            Asn = "AS15169"
+        };
 
         // Make the API call
         try
@@ -92,13 +91,13 @@ class Program
 
 ## Usage
 
-The ASNLookup API documentation is found here: [https://docs.apiverve.com/ref/asnlookup](https://docs.apiverve.com/ref/asnlookup?utm_source=nuget&utm_medium=readme).
+The ASN Lookup API documentation is found here: [https://docs.apiverve.com/ref/asnlookup](https://docs.apiverve.com/ref/asnlookup?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-ASNLookup API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+ASN Lookup API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -125,8 +124,8 @@ public class Example
         var apiClient = new ASNLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ASNLookupQueryOptions {
-    Asn = "AS15169"
-};
+            Asn = "AS15169"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -157,8 +156,8 @@ public class Example
         var apiClient = new ASNLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ASNLookupQueryOptions {
-    Asn = "AS15169"
-};
+            Asn = "AS15169"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -194,8 +193,8 @@ public class Example
         var apiClient = new ASNLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ASNLookupQueryOptions {
-    Asn = "AS15169"
-};
+            Asn = "AS15169"
+        };
 
         try
         {
@@ -250,8 +249,8 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new ASNLookupQueryOptions {
-    Asn = "AS15169"
-};
+            Asn = "AS15169"
+        };
 
         try
         {
@@ -371,7 +370,10 @@ using (var apiClient = new ASNLookupAPIClient("[YOUR_API_KEY]"))
     "simple": "15169",
     "handle": "GOOGLE",
     "description": "Google LLC",
-    "country": "US"
+    "country": "US",
+    "ipv4RangeCount": 152,
+    "ipv6RangeCount": 33,
+    "ipv4AddressCount": 1314816
   }
 }
 ```
@@ -380,7 +382,7 @@ using (var apiClient = new ASNLookupAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -391,12 +393,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

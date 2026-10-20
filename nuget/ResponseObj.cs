@@ -46,6 +46,15 @@ namespace APIVerve.API.ASNLookup
 
         [JsonProperty("country")]
         public string Country { get; set; }
+
+        [JsonProperty("ipv4RangeCount")]
+        public long? Ipv4RangeCount { get; set; }
+
+        [JsonProperty("ipv6RangeCount")]
+        public long? Ipv6RangeCount { get; set; }
+
+        [JsonProperty("ipv4AddressCount")]
+        public long? Ipv4AddressCount { get; set; }
     }
 
     public partial class Premium
