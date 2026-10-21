@@ -1,6 +1,6 @@
 # ASN Lookup API - PHP Package
 
-ASN Lookup is a simple tool for getting information on Autonomous System Numbers (ASNs). It returns information on various ASNs.
+ASN Lookup resolves any Autonomous System Number to its registered organization name and numeric identifier. Paid plans add the registry handle, country code, and announced IP range statistics.
 
 ## Installation
 
@@ -73,7 +73,10 @@ $client = new Client(
     "simple": "15169",
     "handle": "GOOGLE",
     "description": "Google LLC",
-    "country": "US"
+    "country": "US",
+    "ipv4RangeCount": 152,
+    "ipv6RangeCount": 33,
+    "ipv4AddressCount": 1314816
   }
 }
 ```
@@ -85,11 +88,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/asnlookup?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/asnlookup?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/asnlookup?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/asnlookup?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/asnlookup?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/asnlookup?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
