@@ -1,7 +1,7 @@
 {
     "name": "apiverve/asnlookup",
-    "description": "ASN Lookup is a simple tool for getting information on Autonomous System Numbers (ASNs). It returns information on various ASNs.",
-    "version": "1.2.0",
+    "description": "ASN Lookup resolves any Autonomous System Number to its registered organization name and numeric identifier. Paid plans add the registry handle, country code, and announced IP range statistics.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "asnlookup",
-        "asn lookup",
-        "asn information",
-        "asn api",
-        "asn tool",
-        "asn software"
+        "asn lookup api",
+        "autonomous system lookup",
+        "find asn owner",
+        "asn to organization",
+        "autonomous system number search"
     ],
-    "homepage": "https://apiverve.com/marketplace/asnlookup?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/asnlookup?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/asnlookup",
