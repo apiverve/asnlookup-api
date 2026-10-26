@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/asnlookup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "ASN Lookup resolves any Autonomous System Number to its registered organization name and numeric identifier. Paid plans add the registry handle, country code, and announced IP range statistics.",
   "main": "index.js",
   "types": "index.d.ts",
