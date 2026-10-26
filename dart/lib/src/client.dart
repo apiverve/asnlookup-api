@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// ASN Lookup API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/asnlookup?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/asnlookup?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [asn] (required) - The ASN you want to get information about
