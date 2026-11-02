@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_asnlookup: ^1.2.3
+  apiverve_asnlookup: ^1.2.4
 ```
 
 Then run:
